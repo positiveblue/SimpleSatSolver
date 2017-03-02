@@ -39,9 +39,9 @@ There are some example in the random3SAT folder with a distinct number of variab
 
 This is an open ended project. There is not hard deadline but I have some ideas I would like to implement:
 
-- Distributed SatSolver: Almost all the SatSolvers do not implmenet a distributed version of the algorithms. Given the size/complexity of some inputs would be really interesting implement some solutions using MPI. 
+- **Distributed SatSolver**: Almost all the SatSolvers do not implmenet a distributed version of the algorithms. Given the size/complexity of some inputs would be really interesting implement some solutions using MPI. 
 
-- There are hundreds of ideas/modifications trying to speed up sat solvers. It is a hot topic in research so implement some cut-edge algorithms would be great.
+- **Newer algorithms**: There are hundreds of ideas/modifications trying to speed up sat solvers. It is a hot topic in research so implement some cut-edge algorithms would be great.
 
 ## Issue tracker
 
