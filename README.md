@@ -27,12 +27,37 @@ There are some example in the random3SAT folder with a distinct number of variab
 
 ```bash
     sss < random3SAT/vars-200-1.cnf
+    SATISFIABLE 346 8986 328
 ```
 
+The output contains the number of *decisions*, *propagations* and *backtracks* that sss did.
 
 ## Quick start
 
-[TODO]: Installation
+First, you must download the libDori code from our [Git repository](https://github.com/jomsdev/SimpleSatSolver).
+
+To clone the project from Git, `cd` to a suitable location and run
+```
+git clone https://github.com/jomsdev/SimpleSatSolver.git
+```
+
+This will clone the entire contents of the repository. You can check out to the current development branch
+if you want to use the last stable version.
+
+To update the project from within the project's folder, you can run the following command:
+```
+git pull
+```
+
+Once you have downloaded the source code, you can `cd` into the source code directory and build and install libDori with
+```
+mkdir build
+cd build
+cmake ..
+make
+# it install the files under /usr/local
+make install
+```
 
 
 ## Future Work
@@ -51,4 +76,4 @@ If it hasn't, just open a [new clear and descriptive issue](../../issues/new).
 
 ## License
 
- Simple Sat Solver (SSS) is under the MIT license. See the [LICENSE](https://github.com/jomsdev/SimpleSatSolver/blob/master/LICENSE) file for details.
+Simple Sat Solver (SSS) is under the MIT license. See the [LICENSE](https://github.com/jomsdev/SimpleSatSolver/blob/master/LICENSE) file for details.
