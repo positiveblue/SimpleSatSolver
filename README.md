@@ -6,18 +6,42 @@ consistently a value to each variable  (*TRUE* or *FALSE*) in such a way that th
 **SAT** is one of the first problems that was proven to be **NP-complete** and 
 there is no known algorithm that efficiently solves each **SAT** problem. It is generally believed that no such algorithm exists.
 
-Many real world problems can be codified as a **SAT** formula so **Sat solvers** are becoming more and more popular these days.
+Many real world problems can be codified as a **SAT** formula so **Sat solvers** are becoming more and more popular these days. Looking
+forware to learn more about the topic I decided to implement a Simple Sat Solver (SSS) using the DPLL algorithm. I got some inspiration/ideas 
+from many papers, here a list of the most relevants:
+
+- [Heuristic average-case analysis of the
+backtrack resolution of random 3-Satisfiability
+instances](https://arxiv.org/pdf/cs/0401011.pdf)
+- [A Decision Procedure for Separation Logic in SMT](https://arxiv.org/pdf/1603.06844.pdf)
+- [Improving DPLL Solver Performance with
+Domain-Specific Heuristics: the ASP Case](https://arxiv.org/pdf/1102.2125.pdf)
 
 
 ## Examples
 
-[TODO]: CLI tool and benchmark
+Simple Sat Solver can be used as a command line tool. After compaline and installing the software the command `sss` is going to read
+a file in cnf format and print if the problem is satisfatible or not. 
+
+There are some example in the random3SAT folder with a distinct number of variables (from 100 to 300).
+
+```bash
+    sss < random3SAT/vars-200-1.cnf
+```
 
 
 ## Quick start
 
 [TODO]: Installation
 
+
+## Future Work
+
+This is an open ended project. There is not hard deadline but I have some ideas I would like to implement:
+
+- Distributed SatSolver: Almost all the SatSolvers do not implmenet a distributed version of the algorithms. Given the size/complexity of some inputs would be really interesting implement some solutions using MPI. 
+
+- There are hundreds of ideas/modifications trying to speed up sat solvers. It is a hot topic in research so implement some cut-edge algorithms would be great.
 
 ## Issue tracker
 
