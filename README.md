@@ -34,7 +34,7 @@ The output contains the number of *decisions*, *propagations* and *backtracks* t
 
 ## Quick start
 
-First, you must download the libDori code from our [Git repository](https://github.com/jomsdev/SimpleSatSolver).
+First, you must download the SimpleSatSolver code from our [Git repository](https://github.com/jomsdev/SimpleSatSolver).
 
 To clone the project from Git, `cd` to a suitable location and run
 ```
@@ -49,7 +49,7 @@ To update the project from within the project's folder, you can run the followin
 git pull
 ```
 
-Once you have downloaded the source code, you can `cd` into the source code directory and build and install libDori with
+Once you have downloaded the source code, you can `cd` into the source code directory and build and install sss with
 ```
 mkdir build
 cd build
